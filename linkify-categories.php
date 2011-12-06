@@ -2,17 +2,17 @@
 /**
  * @package Linkify_Categories
  * @author Scott Reilly
- * @version 2.0
+ * @version 2.0.1
  */
 /*
 Plugin Name: Linkify Categories
-Version: 2.0
+Version: 2.0.1
 Plugin URI: http://coffee2code.com/wp-plugins/linkify-categories/
 Author: Scott Reilly
 Author URI: http://coffee2code.com
 Description: Turn a list of category IDs and/or slugs into a list of links to those categories.
 
-Compatible with WordPress 2.8+, 2.9+, 3.0+, 3.1+.
+Compatible with WordPress 2.8+, 2.9+, 3.0+, 3.1+, 3.2+.
 
 =>> Read the accompanying readme.txt file for instructions and documentation.
 =>> Also, visit the plugin's homepage for additional information and updates.
@@ -116,5 +116,6 @@ function linkify_categories( $categories, $before = '', $after = '', $between = 
 	return c2c_linkify_categories( $categories, $before, $after, $between, $before_last, $none );
 }
 add_action( 'linkify_categories', 'linkify_categories', 10, 6 ); // Deprecated
+
 endif;
 ?>

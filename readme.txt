@@ -5,7 +5,7 @@ Tags: categories, link, linkify, archives, list, widget, template tag, coffee2co
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
-Tested up to: 4.4
+Tested up to: 4.7
 Stable tag: 2.2
 
 Turn a string, list, or array of category IDs and/or slugs into a list of links to those categories. Includes widget and template tag.
@@ -151,6 +151,7 @@ Do:
 * Change: Update unit test bootstrap
     * Default `WP_TESTS_DIR` to `/tmp/wordpress-tests-lib` rather than erroring out if not defined via environment variable
     * Enable more error output for unit tests
+* Change: Note compatibility through WP 4.7+
 * Change: Update copyright date (2017)
 
 = 2.2 (2016-03-12) =

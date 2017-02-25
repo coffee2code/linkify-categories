@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) or die();
 
 class Linkify_Categories_Test extends WP_UnitTestCase {
 
-	private static $cat_ids = array();
+	private $cat_ids = array();
 
 	public function setUp() {
 		parent::setUp();

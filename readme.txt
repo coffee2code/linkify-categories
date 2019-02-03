@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 5.1
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 
 Turn a string, list, or array of category IDs and/or slugs into a list of links to those categories. Provides a widget and template tag.
 
@@ -146,7 +146,7 @@ Do:
 
 == Changelog ==
 
-= () =
+= 2.2.2 (2019-02-02) =
 * New: Add README.md
 * Change: Escape text used in markup attributes (hardening)
 * Change: Add GitHub link to readme
@@ -268,6 +268,9 @@ Do:
 
 
 == Upgrade Notice ==
+
+= 2.2.2 =
+Trivial update: minor hardening, noted compatibility through WP 5.1+, and updated copyright date (2019)
 
 = 2.2.1 =
 Trivial update: fixed some unit tests, noted compatibility through WP 4.7+, updated copyright date

@@ -14,7 +14,7 @@ Turn a string, list, or array of category IDs and/or slugs into a list of links 
 
 The plugin provides a widget called "Linkify Catagories" as well as a template tag, `c2c_linkify_categories()`, which allow you to easily specify categories to list and how to list them. Categories are specified by either ID or slug. See other parts of the documentation for example usage and capabilities.
 
-Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/linkify-categories/) | [Plugin Directory Page](https://wordpress.org/plugins/linkify-categories/) | [Author Homepage](http://coffee2code.com)
+Links: [Plugin Homepage](http://coffee2code.com/wp-plugins/linkify-categories/) | [Plugin Directory Page](https://wordpress.org/plugins/linkify-categories/) | [GitHub](https://github.com/coffee2code/linkify-categories/) | [Author Homepage](http://coffee2code.com)
 
 
 == Installation ==
@@ -147,6 +147,7 @@ Do:
 == Changelog ==
 
 = () =
+* Change: Add GitHub link to readme
 * Change: Rename readme.txt section from 'Filters' to 'Hooks'
 * Change: Note compatibility through WP 5.1+
 * Change: Update copyright date (2019)

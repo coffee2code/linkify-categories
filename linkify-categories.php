@@ -85,9 +85,9 @@ function c2c_linkify_categories( $categories, $before = '', $after = '', $betwee
 			if ( $title ) {
 				$links[] = sprintf(
 					'<a href="%1$s" title="%2$s">%3$s</a>',
-					get_category_link( $id ),
+					esc_url( get_category_link( $id ) ),
 					esc_attr( sprintf( __( "View all posts in %s" ), $title ) ),
-					$title
+					esc_attr( $title )
 				);
 			}
 		}

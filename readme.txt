@@ -3,7 +3,7 @@ Contributors: coffee2code
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6ARCFJ9TX3522
 Tags: categories, link, linkify, archives, list, widget, template tag, coffee2code
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 4.7
 Stable tag: 2.2.1
@@ -145,6 +145,9 @@ Do:
 
 
 == Changelog ==
+
+= () =
+* Change: Update License URI to be HTTPS
 
 = 2.2.1 (2017-02-25) =
 * Fix: Fix unit tests by not declaring test class variable as static

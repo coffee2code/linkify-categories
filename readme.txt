@@ -121,7 +121,7 @@ Outputs:
 `No related categories.`
 
 
-== Filters ==
+== Hooks ==
 
 The plugin exposes one action for hooking.
 
@@ -147,6 +147,7 @@ Do:
 == Changelog ==
 
 = () =
+* Change: Rename readme.txt section from 'Filters' to 'Hooks'
 * Change: Note compatibility through WP 5.1+
 * Change: Update copyright date (2019)
 * Change: Update License URI to be HTTPS

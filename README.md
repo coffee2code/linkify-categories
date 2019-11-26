@@ -2,6 +2,8 @@
 
 A plugin for WordPress that turns a string, list, or array of category IDs and/or slugs into a list of links to those categories. Provides a widget and template tag.
 
+This plugin is available in the WordPress Plugin Directory: https://wordpress.org/plugins/linkify-categories/
+
 
 ## Installation
 

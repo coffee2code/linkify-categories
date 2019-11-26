@@ -2,7 +2,7 @@
 /**
  * Linkify Categories plugin widget code
  *
- * Copyright (c) 2011-2019 by Scott Reilly (aka coffee2code)
+ * Copyright (c) 2011-2020 by Scott Reilly (aka coffee2code)
  *
  * @package Linkify_Categories_Widget
  * @author  Scott Reilly

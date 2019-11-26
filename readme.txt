@@ -5,7 +5,7 @@ Tags: categories, link, linkify, archives, list, widget, template tag, coffee2co
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
-Tested up to: 5.1
+Tested up to: 5.3
 Stable tag: 2.2.2
 
 Turn a string, list, or array of category IDs and/or slugs into a list of links to those categories. Provides a widget and template tag.

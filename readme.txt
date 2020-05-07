@@ -103,13 +103,13 @@ A single category ID/slug, or multiple category IDs/slugs defined via an array, 
 
 Outputs something like:
 
- `<a href="http://yourblog.com/category/books">Books</a>, <a href="http://yourblog.com/category/movies">Movies</a>`
+ `<a href="https://example.com/category/books">Books</a>, <a href="https://example.com/category/movies">Movies</a>`
 
 * `<ul><?php c2c_linkify_categories("43, 92", "<li>", "</li>", "</li><li>"); ?></ul>`
 
 Outputs something like:
 
-`<ul><li><a href="http://yourblog.com/category/books">Books</a></li><li><a href="http://yourblog.com/category/movies">Movies</a></li></ul>`
+`<ul><li><a href="https://example.com/category/books">Books</a></li><li><a href="https://example.com/category/movies">Movies</a></li></ul>`
 
 * `<?php c2c_linkify_categories(""); // Assume you passed an empty string as the first value ?>`
 

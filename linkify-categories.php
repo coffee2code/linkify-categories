@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Linkify Categories
- * Version:     2.2.4
+ * Version:     2.2.5
  * Plugin URI:  https://coffee2code.com/wp-plugins/linkify-categories/
  * Author:      Scott Reilly
  * Author URI:  https://coffee2code.com/
@@ -18,7 +18,7 @@
  *
  * @package Linkify_Categories
  * @author  Scott Reilly
- * @version 2.2.4
+ * @version 2.2.5
  */
 
 /*

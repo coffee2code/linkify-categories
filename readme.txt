@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 5.5
-Stable tag: 2.2.4
+Stable tag: 2.2.5
 
 Turn a string, list, or array of category IDs and/or slugs into a list of links to those categories. Provides a widget and template tag.
 
@@ -147,6 +147,16 @@ Do:
 
 == Changelog ==
 
+= 2.2.5 (2020-08-16) =
+* New: Add TODO.md for newly added potential TODO items
+* Change: Restructure unit test file structure
+    * New: Create new subdirectory `phpunit/` to house all files related to unit testing
+    * Change: Move `bin/` to `phpunit/bin/`
+    * Change: Move `tests/bootstrap.php` to `phpunit/`
+    * Change: Move `tests/` to `phpunit/tests/`
+    * Change: Rename `phpunit.xml` to `phpunit.xml.dist` per best practices
+* Change: Note compatibility through WP 5.5+
+
 = 2.2.4 (2020-05-06) =
 * Change: Use HTTPS for link to WP SVN repository in bin script for configuring unit tests
 * Change: Note compatibility through WP 5.4+
@@ -177,6 +187,9 @@ _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/li
 
 
 == Upgrade Notice ==
+
+= 2.2.5 =
+Trivial update: Restructured unit test file structure, added a TODO.md file, and noted compatibility through WP 5.5+.
 
 = 2.2.4 =
 Trivial update: Updated a few URLs to be HTTPS and noted compatibility through WP 5.4+.

@@ -82,22 +82,24 @@ A single category ID/slug, or multiple category IDs/slugs defined via an array, 
 
 * These are all valid calls:
 
-`<?php c2c_linkify_categories(43); ?>`
-`<?php c2c_linkify_categories("43"); ?>`
-`<?php c2c_linkify_categories("books"); ?>`
-`<?php c2c_linkify_categories("43 92 102"); ?>`
-`<?php c2c_linkify_categories("book movies programming-notes"); ?>`
-`<?php c2c_linkify_categories("book 92 programming-notes"); ?>`
-`<?php c2c_linkify_categories("43,92,102"); ?>`
-`<?php c2c_linkify_categories("book,movies,programming-notes"); ?>`
-`<?php c2c_linkify_categories("book,92,programming-notes"); ?>`
-`<?php c2c_linkify_categories("43, 92, 102"); ?>`
-`<?php c2c_linkify_categories("book, movies, programming-notes"); ?>`
-`<?php c2c_linkify_categories("book, 92, programming-notes"); ?>`
-`<?php c2c_linkify_categories(array(43,92,102)); ?>`
-`<?php c2c_linkify_categories(array("43","92","102")); ?>`
-`<?php c2c_linkify_categories(array("book","movies","programming-notes")); ?>`
-`<?php c2c_linkify_categories(array("book",92,"programming-notes")); ?>`
+`
+<?php c2c_linkify_categories(43); ?>
+<?php c2c_linkify_categories("43"); ?>
+<?php c2c_linkify_categories("books"); ?>
+<?php c2c_linkify_categories("43 92 102"); ?>
+<?php c2c_linkify_categories("book movies programming-notes"); ?>
+<?php c2c_linkify_categories("book 92 programming-notes"); ?>
+<?php c2c_linkify_categories("43,92,102"); ?>
+<?php c2c_linkify_categories("book,movies,programming-notes"); ?>
+<?php c2c_linkify_categories("book,92,programming-notes"); ?>
+<?php c2c_linkify_categories("43, 92, 102"); ?>
+<?php c2c_linkify_categories("book, movies, programming-notes"); ?>
+<?php c2c_linkify_categories("book, 92, programming-notes"); ?>
+<?php c2c_linkify_categories(array(43,92,102)); ?>
+<?php c2c_linkify_categories(array("43","92","102")); ?>
+<?php c2c_linkify_categories(array("book","movies","programming-notes")); ?>
+<?php c2c_linkify_categories(array("book",92,"programming-notes")); ?>
+`
 
 * `<?php c2c_linkify_categories("43 92"); ?>`
 

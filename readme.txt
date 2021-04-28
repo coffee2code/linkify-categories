@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
 Tested up to: 5.7
-Stable tag: 2.2.5
+Stable tag: 2.2.6
 
 Turn a string, list, or array of category IDs and/or slugs into a list of links to those categories. Provides a widget and template tag.
 
@@ -149,6 +149,13 @@ Do:
 
 == Changelog ==
 
+= 2.2.6 (2021-04-27) =
+* Change: Add textdomain for lone non-widget string
+* Change: Fix Markdown formatting for code examples in readme.txt
+* Change: Note compatibility through WP 5.7+
+* Change: Update copyright date (2021)
+* New: Add a few more possible TODO items
+
 = 2.2.5 (2020-08-16) =
 * New: Add TODO.md for newly added potential TODO items
 * Change: Restructure unit test file structure
@@ -165,30 +172,13 @@ Do:
 * Change: Update links to coffee2code.com to be HTTPS
 * Change: Update examples in documentation to use a proper example URL
 
-= 2.2.3 (2019-11-26) =
-* New: Add CHANGELOG.md and move all but most recent changelog entries into it
-* New: Add optional step to installation instructions to note availability of the widget
-* Change: Update unit test install script and bootstrap to use latest WP unit test repo
-* Change: Note compatibility through WP 5.3+
-* Change: Add link to plugin's page in Plugin Directory to README.md
-* Change: Update copyright date (2020)
-* Change: Split paragraph in README.md's "Support" section into two
-
-= 2.2.2 (2019-02-02) =
-* New: Add README.md
-* Change: Escape text used in markup attributes (hardening)
-* Change: Add GitHub link to readme
-* Change: Unit tests: Minor whitespace tweaks to bootstrap
-* Change: Rename readme.txt section from 'Filters' to 'Hooks'
-* Change: Modify formatting of hook name in readme to prevent being uppercased when shown in the Plugin Directory
-* Change: Note compatibility through WP 5.1+
-* Change: Update copyright date (2019)
-* Change: Update License URI to be HTTPS
-
 _Full changelog is available in [CHANGELOG.md](https://github.com/coffee2code/linkify-categories/blob/master/CHANGELOG.md)._
 
 
 == Upgrade Notice ==
+
+= 2.2.6 =
+Trivial update: noted compatibility through WP 5.7+ and updated copyright date (2021).
 
 = 2.2.5 =
 Trivial update: Restructured unit test file structure, added a TODO.md file, and noted compatibility through WP 5.5+.

@@ -3,6 +3,7 @@
 ## _(in-progress)_
 * Change: Note compatibility through WP 5.7+
 * Change: Update copyright date (2021)
+* New: Add a few more possible TODO items
 
 ## 2.2.5 _(2020-08-16)_
 * New: Add TODO.md for newly added potential TODO items

@@ -49,102 +49,17 @@ Between categories: `</li><li>`
 Yes.
 
 
-== Template Tags ==
+== Developer Documentation ==
 
-The plugin provides one template tag for use in your theme templates, functions.php, or plugins.
+Developer documentation can be found in [DEVELOPER-DOCS.md](https://github.com/coffee2code/linkify-categories/blob/master/DEVELOPER-DOCS.md). That documentation covers the template tag and hook provided by the plugin.
 
-= Functions =
+As an overview, this is the template tag provided by the plugin:
 
-* `<?php c2c_linkify_categories( $categories, $before = '', $after = '', $between = ', ', $before_last = '', $none = '' ) ?>`
-Displays links to each of any number of categories specified via category IDs/slugs
+* `c2c_linkify_categories()` : Template tag to display links to each of any number of categories specified via category IDs/slugs. You can customize text to show before and/or after the entire listing, between each category, and what to display (if anything) when no categories are listed.
 
-= Arguments =
+This is the hook provided by the plugin:
 
-* `$categories`
-A single category ID/slug, or multiple category IDs/slugs defined via an array, or multiple categories IDs/slugs defined via a comma-separated and/or space-separated string
-
-* `$before`
-(optional) To appear before the entire category listing (if categories exist or if 'none' setting is specified)
-
-* `$after`
-(optional) To appear after the entire category listing (if categories exist or if 'none' setting is specified)
-
-* `$between`
-(optional) To appear between categories
-
-* `$before_last`
-(optional) To appear between the second-to-last and last element, if not specified, 'between' value is used
-
-* `$none`
-(optional) To appear when no categories have been found. If blank, then the entire function doesn't display anything
-
-= Examples =
-
-* These are all valid calls:
-
-`
-<?php c2c_linkify_categories(43); ?>
-<?php c2c_linkify_categories("43"); ?>
-<?php c2c_linkify_categories("books"); ?>
-<?php c2c_linkify_categories("43 92 102"); ?>
-<?php c2c_linkify_categories("book movies programming-notes"); ?>
-<?php c2c_linkify_categories("book 92 programming-notes"); ?>
-<?php c2c_linkify_categories("43,92,102"); ?>
-<?php c2c_linkify_categories("book,movies,programming-notes"); ?>
-<?php c2c_linkify_categories("book,92,programming-notes"); ?>
-<?php c2c_linkify_categories("43, 92, 102"); ?>
-<?php c2c_linkify_categories("book, movies, programming-notes"); ?>
-<?php c2c_linkify_categories("book, 92, programming-notes"); ?>
-<?php c2c_linkify_categories(array(43,92,102)); ?>
-<?php c2c_linkify_categories(array("43","92","102")); ?>
-<?php c2c_linkify_categories(array("book","movies","programming-notes")); ?>
-<?php c2c_linkify_categories(array("book",92,"programming-notes")); ?>
-`
-
-* `<?php c2c_linkify_categories("43 92"); ?>`
-
-Outputs something like:
-
- `<a href="https://example.com/category/books">Books</a>, <a href="https://example.com/category/movies">Movies</a>`
-
-* `<ul><?php c2c_linkify_categories("43, 92", "<li>", "</li>", "</li><li>"); ?></ul>`
-
-Outputs something like:
-
-`<ul><li><a href="https://example.com/category/books">Books</a></li><li><a href="https://example.com/category/movies">Movies</a></li></ul>`
-
-* `<?php c2c_linkify_categories(""); // Assume you passed an empty string as the first value ?>`
-
-Displays nothing.
-
-* `<?php c2c_linkify_categories("", "", "", "", "", "No related categories."); // Assume you passed an empty string as the first value ?>`
-
-Outputs:
-
-`No related categories.`
-
-
-== Hooks ==
-
-The plugin exposes one action for hooking.
-
-**c2c_linkify_categories (action)**
-
-The 'c2c_linkify_categories' hook allows you to use an alternative approach to safely invoke `c2c_linkify_categories()` in such a way that if the plugin were to be deactivated or deleted, then your calls to the function won't cause errors in your site.
-
-Arguments:
-
-* same as for `c2c_linkify_categories()`
-
-Example:
-
-Instead of:
-
-`<?php c2c_linkify_categories( "43, 92", 'Categories: ' ); ?>`
-
-Do:
-
-`<?php do_action( 'c2c_linkify_categories', "43, 92", 'Categories: ' ); ?>`
+* `c2c_linkify_categories` : Allows use of an alternative approach to safely invoke `c2c_linkify_categories()` in such a way that if the plugin were deactivated or deleted, then your calls to the function won't cause errors in your site.
 
 
 == Changelog ==

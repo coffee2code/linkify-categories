@@ -1,6 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
+* Change: Remove long-deprecated function `linkify_categories()`
 * Change: Tweak installation instruction
 * Change: Note compatibility through WP 5.8+
 * Unit tests:

@@ -116,18 +116,3 @@ function c2c_linkify_categories( $categories, $before = '', $after = '', $betwee
 }
 add_action( 'c2c_linkify_categories', 'c2c_linkify_categories', 10, 6 );
 endif;
-
-if ( ! function_exists( 'linkify_categories' ) ) :
-/**
- * Displays links to each of any number of categories specified via category IDs and/or slugs
- *
- * @since 1.0
- * @deprecated 2.0 Use c2c_linkify_categories() instead
- */
-function linkify_categories( $categories, $before = '', $after = '', $between = ', ', $before_last = '', $none = '' ) {
-	_deprecated_function( 'linkify_categories', '2.0', 'c2c_linkify_categories' );
-	return c2c_linkify_categories( $categories, $before, $after, $between, $before_last, $none );
-}
-add_action( 'linkify_categories', 'linkify_categories', 10, 6 ); // Deprecated
-
-endif;

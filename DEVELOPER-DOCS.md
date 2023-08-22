@@ -17,10 +17,10 @@ Displays links to each of any number of categories specified via category IDs/sl
 A single category ID/slug, or multiple category IDs/slugs defined via an array, or multiple category IDs/slugs defined via a comma-separated and/or space-separated string
 
 * `$before` _(string)_
-Optional. Text to appear before the entire category listing (if authors exist or if 'none' setting is specified). Default is an empty string.
+Optional. Text to appear before the entire category listing (if categories exist or if 'none' setting is specified). Default is an empty string.
 
 * `$after` _(string)_
-Optional. Text to appear after the entire category listing (if authors exist or if 'none' setting is specified). Default is an empty string.
+Optional. Text to appear after the entire category listing (if categories exist or if 'none' setting is specified). Default is an empty string.
 
 * `$between` _(string)_
 Optional. Text to appear between categories. Default is ", ".

@@ -71,7 +71,7 @@ class c2c_LinkifyCategoriesWidget extends c2c_LinkifyWidget {
 			),
 			'none' =>  array(
 				'input'   => 'text',
-				'default' => '',
+				'default' => __( 'No categories specified to be displayed', 'linkify-categories' ),
 				'label'   => __( 'None text', 'linkify-categories' ),
 				'help'    => __( 'Text to appear when no categories have been found.  If blank, then the entire function doesn\'t display anything.', 'linkify-categories' ),
 			),

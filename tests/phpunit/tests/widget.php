@@ -123,7 +123,7 @@ class Linkify_Widget_Test extends WP_UnitTestCase {
 		list( $widget, $config, $settings ) = $this->widget_init( array( 'categories' => 'bogus', 'before' => '<ul><li>', 'after' => '</li></ul>', 'between' => '</li><li>' )  );
 
 		$this->assertEquals(
-			'<div class="my-widget"><h3>Categories</h3></div>',
+			'<div class="my-widget"><h3>Categories</h3><ul><li>No categories specified to be displayed</li></ul></div>',
 			$this->get_results( $widget, $settings, $config )
 		);
 	}
@@ -132,7 +132,7 @@ class Linkify_Widget_Test extends WP_UnitTestCase {
 		list( $widget, $config, $settings ) = $this->widget_init( array( 'categories' => '', 'before' => '<ul><li>', 'after' => '</li></ul>', 'between' => '</li><li>' )  );
 
 		$this->assertEquals(
-			'<div class="my-widget"><h3>Categories</h3></div>',
+			'<div class="my-widget"><h3>Categories</h3><ul><li>No categories specified to be displayed</li></ul></div>',
 			$this->get_results( $widget, $settings, $config )
 		);
 	}

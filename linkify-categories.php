@@ -107,6 +107,9 @@ function c2c_linkify_categories( $categories, $before = '', $after = '', $betwee
 		}
 		$response = $none;
 	}
+
+	// Output categories (which is permitted to include markup).
+	// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	echo $before . $response . $after;
 }
 add_action( 'c2c_linkify_categories', 'c2c_linkify_categories', 10, 6 );

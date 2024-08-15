@@ -8,7 +8,7 @@
  * Text Domain: linkify-categories
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Description: Turn a list of category IDs and/or slugs into a list of links to those categories. Includes widget and template tag.
+ * Description: Turn a string, list, or array of category IDs and/or slugs into a list of links to those category archives. Provides a widget and template tag.
  *
  * Compatible with WordPress 2.8 through 6.6+.
  *

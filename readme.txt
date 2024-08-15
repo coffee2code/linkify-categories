@@ -8,7 +8,7 @@ Requires at least: 2.8
 Tested up to: 6.6
 Stable tag: 2.3.1
 
-Turn a string, list, or array of category IDs and/or slugs into a list of links to those categories. Provides a widget and template tag.
+Turn a string, list, or array of category IDs and/or slugs into a list of links to those category archives. Provides a widget and template tag.
 
 == Description ==
 

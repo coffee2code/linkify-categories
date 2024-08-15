@@ -1,6 +1,7 @@
 # Changelog
 
 ## _(in-progress)_
+* Change: Tweak descriptions to clarify that the links are to each category's archive
 * Change: Add default values for optional arguments to inline parameter documentation
 * Change: Note compatibility through WP 6.6+
 * Change: Update copyright date (2024)

@@ -5,6 +5,9 @@
  * @package Linkify_Categories
  */
 
+// Prevent web access.
+( php_sapi_name() !== 'cli' ) && die();
+
 define( 'LINKIFY_CATEGORIES_PLUGIN_DIR',  dirname( __FILE__, 3 ) );
 define( 'LINKIFY_CATEGORIES_PLUGIN_FILE', LINKIFY_CATEGORIES_PLUGIN_DIR . '/linkify-categories.php' );
 

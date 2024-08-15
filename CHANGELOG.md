@@ -4,6 +4,7 @@
 * Change: Note compatibility through WP 6.6+
 * Change: Update copyright date (2024)
 * Change: Reduce number of 'Tags' from `readme.txt`
+* Hardening: Unit tests: Prevent direct web access to `bootstrap.php`
 
 ## 2.3.1 _(2023-08-22)_
 * Fix: Fix some typos in documentation

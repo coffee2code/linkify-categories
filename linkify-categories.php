@@ -51,11 +51,11 @@ if ( ! function_exists( 'c2c_linkify_categories' ) ) :
  *
  * @param int|string|array $categories  A single category ID/slug, or multiple category IDs/slugs defined via an array, or multiple category IDs/slugs defined
  *                                      via a comma-separated and/or space-separated string
- * @param string           $before      Optional. Text to appear before the entire category listing (if categories exist or if 'none' setting is specified).
- * @param string           $after       Optional. Text to appear after the entire category listing (if categories exist or if 'none' setting is specified).
- * @param string           $between     Optional. Text to appear between all categories.
- * @param string           $before_last Optional. Text to appear between the second-to-last and last element, if not specified, 'between' value is used.
- * @param string           $none        Optional. Text to appear when no categories have been found.  If blank, then the entire function doesn't display anything.
+ * @param string           $before      Optional. Text to appear before the entire category listing (if categories exist or if 'none' setting is specified). Default empty string.
+ * @param string           $after       Optional. Text to appear after the entire category listing (if categories exist or if 'none' setting is specified). Default empty string.
+ * @param string           $between     Optional. Text to appear between all categories. Default is ', '.
+ * @param string           $before_last Optional. Text to appear between the second-to-last and last element, if not specified, 'between' value is used. Default empty string.
+ * @param string           $none        Optional. Text to appear when no categories have been found.  If blank, then the entire function doesn't display anything. Default empty string.
  */
 function c2c_linkify_categories( $categories, $before = '', $after = '', $between = ', ', $before_last = '', $none = '' ) {
 	if ( empty( $categories ) ) {

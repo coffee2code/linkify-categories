@@ -155,4 +155,27 @@ class Linkify_Categories_Test extends WP_UnitTestCase {
 		$this->assertEquals( $expected, $this->get_results( array( array(), '<ul><li>', '</li></ul>', '</li><li>', '', $missing ), false ) );
 	}
 
+	/*
+	 * __c2c_linkify_categories_get_category_link()
+	 */
+
+	 public function test___c2c_linkify_categories_get_category_link() {
+		$title = get_cat_name( $this->cat_ids[0] );
+		$expected = sprintf(
+			'<a href="http://example.org/?cat=%d" title="View all posts in %s">%s</a>',
+			esc_attr( $this->cat_ids[0] ),
+			esc_attr( $title ),
+			esc_html( $title )
+		);
+
+		$this->assertEquals(
+			$expected,
+			__c2c_linkify_categories_get_category_link( $this->cat_ids[0] )
+		);
+	}
+
+	public function test___c2c_linkify_categories_get_category_link_with_invalid_id() {
+		$this->assertEmpty( __c2c_linkify_categories_get_category_link( -1 ) );
+	}
+
 }

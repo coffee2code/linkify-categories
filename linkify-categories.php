@@ -81,15 +81,9 @@ function c2c_linkify_categories( $categories, $before = '', $after = '', $betwee
 			if ( ! $id ) {
 				continue;
 			}
-			$title = get_cat_name( $id );
-			if ( $title ) {
-				$links[] = sprintf(
-					'<a href="%1$s" title="%2$s">%3$s</a>',
-					esc_url( get_category_link( $id ) ),
-					/* translators: %s: Category's name */
-					esc_attr( sprintf( __( "View all posts in %s", 'linkify-categories' ), $title ) ),
-					esc_attr( $title )
-				);
+			$link = __c2c_linkify_categories_get_category_link( $id );
+			if ( $link ) {
+				$links[] = $link;
 			}
 		}
 		if ( empty( $before_last ) ) {
@@ -117,3 +111,27 @@ function c2c_linkify_categories( $categories, $before = '', $after = '', $betwee
 }
 add_action( 'c2c_linkify_categories', 'c2c_linkify_categories', 10, 6 );
 endif;
+
+/**
+ * Returns the archive link for a category.
+ *
+ * @access private
+ *
+ * @param int $category_id The category ID.
+ * @return string
+ */
+function __c2c_linkify_categories_get_category_link( $category_id ) {
+	$title = get_cat_name( $category_id );
+
+	if ( ! $title ) {
+		return '';
+	}
+
+	return sprintf(
+		'<a href="%1$s" title="%2$s">%3$s</a>',
+		esc_url( get_category_link( $category_id ) ),
+		/* translators: %s: Category's name */
+		esc_attr( sprintf( __( "View all posts in %s", 'linkify-categories' ), $title ) ),
+		esc_attr( $title )
+	);
+}

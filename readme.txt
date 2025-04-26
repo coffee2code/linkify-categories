@@ -5,7 +5,7 @@ Tags: category, categories, link, linkify, widget
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 2.8
-Tested up to: 6.6
+Tested up to: 6.8
 Stable tag: 2.4
 
 Turn a string, list, or array of category IDs and/or slugs into a list of links to those category archives. Provides a widget and template tag.

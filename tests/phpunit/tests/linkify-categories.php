@@ -6,7 +6,7 @@ class Linkify_Categories_Test extends WP_UnitTestCase {
 
 	private $cat_ids = array();
 
-	public function setUp():void {
+	public function setUp(): void {
 		parent::setUp();
 		$this->cat_ids = $this->factory->category->create_many( 5 );
 	}

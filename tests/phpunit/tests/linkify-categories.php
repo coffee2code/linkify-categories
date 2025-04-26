@@ -73,7 +73,7 @@ class Linkify_Categories_Test extends WP_UnitTestCase {
 	}
 
 	public function test_widget_version() {
-		$this->assertEquals( '005', c2c_LinkifyCategoriesWidget::version() );
+		$this->assertEquals( '006', c2c_LinkifyCategoriesWidget::version() );
 	}
 
 	public function test_widget_hooks_widgets_init() {
